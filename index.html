@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="fr" data-mode="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function(){try{
+  var m=localStorage.getItem('ah5-mode'),l=localStorage.getItem('ah5-lang');
+  if(m==='night'||m==='day')document.documentElement.setAttribute('data-mode',m);
+  if(l==='en'||l==='fr')document.documentElement.setAttribute('lang',l);
+}catch(e){}})();
+</script>
+<title>HAMDI Ahmed — Portfolio ingénierie mécanique</title>
+<meta name="description" content="Portfolio de HAMDI Ahmed, élève ingénieur Arts et Métiers / ENIB : conception mécanique, industrialisation, simulation, stages et dossier technique.">
+<meta name="author" content="HAMDI Ahmed">
+<meta name="theme-color" content="#f4f1ea">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HAMDI Ahmed — Portfolio ingénierie mécanique">
+<meta property="og:description" content="Moules, outillages, convoyeurs : cinq stages, six certifications SOLIDWORKS, un dossier technique de huit plans.">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2eee5'/%3E%3Crect x='1' y='1' width='30' height='30' fill='none' stroke='%2316150f'/%3E%3Ctext x='16' y='21' font-family='Helvetica,Arial' font-size='12' font-weight='700' text-anchor='middle' fill='%2316150f'%3EAH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#profil"><span class="fr">Aller au sommaire</span><span class="en">Skip to content</span></a>
+
+<!-- ============================ EN-TÊTE ============================ -->
+<header class="topbar">
+  <div class="wrap topbar__in">
+    <a class="monogram" href="#top" aria-label="HAMDI Ahmed — haut de page">AH</a>
+    <div class="idblock">
+      <b>HAMDI Ahmed</b>
+      <span>Arts et Métiers · ENIB</span>
+    </div>
+    <nav class="index" aria-label="Sommaire">
+      <a href="#profil" data-nav="profil"><span class="fr">Profil</span><span class="en">Profile</span></a>
+      <a href="#competences" data-nav="competences"><span class="fr">Compétences</span><span class="en">Skills</span></a>
+      <a href="#stages" data-nav="stages"><span class="fr">Stages</span><span class="en">Internships</span></a>
+      <a href="#etudes" data-nav="etudes"><span class="fr">Études de cas</span><span class="en">Case studies</span></a>
+      <a href="#plans" data-nav="plans"><span class="fr">Plans</span><span class="en">Drawings</span></a>
+      <a href="#certifications" data-nav="certifications"><span class="fr">Certifications</span><span class="en">Certifications</span></a>
+      <a href="#formation" data-nav="formation"><span class="fr">Formation</span><span class="en">Education</span></a>
+      <a href="#contact" data-nav="contact"><span class="fr">Contact</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <button class="tbtn" type="button" data-mode-toggle aria-pressed="false" aria-label="Mode jour / nuit" title="Mode jour / nuit"><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5Z"/></svg></button>
+      <button class="tbtn lbtn" type="button" data-lang-toggle aria-label="Français / English" title="Français / English"><span class="l-fr">FR</span><b>/</b><span class="l-en">EN</span></button>
+      <button class="tbtn burger" type="button" data-burger aria-expanded="false" aria-controls="drawer" aria-label="Sommaire"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="wrap">
+      <a href="#profil"><i>01</i><span class="fr">Profil</span><span class="en">Profile</span></a>
+      <a href="#competences"><i>02</i><span class="fr">Compétences</span><span class="en">Skills</span></a>
+      <a href="#stages"><i>03</i><span class="fr">Stages</span><span class="en">Internships</span></a>
+      <a href="#etudes"><i>04</i><span class="fr">Études de cas</span><span class="en">Case studies</span></a>
+      <a href="#plans"><i>05</i><span class="fr">Plans</span><span class="en">Drawings</span></a>
+      <a href="#certifications"><i>06</i><span class="fr">Certifications</span><span class="en">Certifications</span></a>
+      <a href="#formation"><i>07</i><span class="fr">Formation</span><span class="en">Education</span></a>
+      <a href="#contact"><i>08</i><span class="fr">Contact</span><span class="en">Contact</span></a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="hero__guides" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero__grid">
+        <div>
+          <p class="kicker smallcaps"><span class="dot"></span><span>Portfolio · édition 2026</span><s>/</s><span>Conception · Industrialisation</span></p>
+          <h1>HAMDI<span class="l2">Ahmed</span></h1>
+          <p class="hero__role"><span>Élève ingénieur</span><s>/</s><span>Arts et Métiers Paris</span><s>/</s><span>ENIB Bizerte</span></p>
+          <p class="lead"><span class="fr">Je conçois des outillages, des moules et des postes de travail qui tiennent la cadence. Cinq stages en atelier m’ont donné une méthode simple : <b>mesurer, modéliser, vérifier, transmettre</b>.</span><span class="en">I design fixtures, moulds and workstations that hold the cycle time. Five shop-floor internships gave me a simple method: <b>measure, model, verify, hand over</b>.</span></p>
+          <div class="hero__cta">
+            <a class="btn btn--fill" href="#etudes"><span class="fr">Voir les études de cas</span><span class="en">See the case studies</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg></a>
+            <a class="btn btn--line" href="#plans"><span class="fr">Dossier technique · 8 plans</span><span class="en">Technical package · 8 sheets</span></a>
+          </div>
+          <p class="avail"><i></i><span class="fr">Disponible — stage de fin d’études, 6 mois, dès février 2027</span><span class="en">Available — final-year internship, 6 months, from February 2027</span></p>
+        </div>
+        <figure class="fig">
+          <div class="fig__frame">
+            <img src="assets/img/portrait-cut.png" alt="Portrait de HAMDI Ahmed" width="640" height="800">
+          </div>
+          <figcaption><b>FIG. 00</b><span class="fr">Portrait — dossier de candidature, 2026</span><span class="en">Portrait — application file, 2026</span></figcaption>
+        </figure>
+      </div>
+
+      <dl class="fiche">
+        <div><dt><span class="fr">Objet</span><span class="en">Subject</span></dt><dd><i class="leader"></i><span><span class="fr">Portfolio d’ingénierie mécanique</span><span class="en">Mechanical engineering portfolio</span></span></dd></div>
+        <div><dt><span class="fr">Formation</span><span class="en">Education</span></dt><dd><i class="leader"></i><span><span class="fr">Double diplôme Arts et Métiers – ENIB</span><span class="en">Arts et Métiers – ENIB double degree</span></span></dd></div>
+        <div><dt><span class="fr">Spécialité</span><span class="en">Field</span></dt><dd><i class="leader"></i><span><span class="fr">Conception · Industrialisation · Qualité</span><span class="en">Design · Manufacturing · Quality</span></span></dd></div>
+        <div><dt><span class="fr">Recherche</span><span class="en">Seeking</span></dt><dd class="o"><i class="leader"></i><span><span class="fr">Stage de fin d’études — 6 mois, dès février 2027</span><span class="en">Final-year internship — 6 months, from February 2027</span></span></dd></div>
+        <div><dt><span class="fr">Établi à</span><span class="en">Based in</span></dt><dd><i class="leader"></i><span>Paris 14e · France</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============================ 01 PROFIL ============================ -->
+  <section class="chapter" id="profil">
+    <div class="wrap">
+      <div class="chapter__head">
+        <div class="chapter__num">01</div>
+        <div class="chapter__title">
+          <h2><span class="fr">Profil</span><span class="en">Profile</span></h2>
+          <p><span class="fr">Du dessin de la pièce au poste de production : ce que je sais faire, et comment je le vérifie.</span><span class="en">From part drawing to production station: what I know how to do, and how I check it.</span></p>
+        </div>
+        <div class="chapter__meta smallcaps"><div>Section 01 / 08</div><div><span class="fr">Lecture 2 min</span><span class="en">2 min read</span></div></div>
+      </div>
+
+      <div class="prose">
+        <div class="prose__main">
+          <p class="drop"><span class="fr">Élève ingénieur en double diplôme entre Arts et Métiers (Paris) et l’École nationale d’ingénieurs de Bizerte, je prépare un parcours qui va de la pièce au poste de production : conception mécanique, industrialisation, qualité. Mon terrain, c’est l’atelier — là où un plan se confronte au geste de l’opérateur.</span><span class="en">An engineering student on a double degree between Arts et Métiers (Paris) and the École Nationale d’Ingénieurs de Bizerte, I am building a path that runs from the part to the production station: mechanical design, manufacturing, quality. My ground is the workshop — where a drawing meets the operator’s gesture.</span></p>
+          <p><span class="fr">Cinq stages, de la fraiseuse conventionnelle à la ligne d’injection. Chez <b>Techniplast</b>, j’ai conçu un moule deux plaques pour une pièce automobile Valeo et vérifié le remplissage sous SOLIDWORKS Plastics. Chez <b>AD Plast</b>, j’ai repris un poste de soudure de fond plafonnant à 80 s. Chez <b>Eleonetech</b>, j’ai dessiné un convoyeur bi-étage pour arrêter les ruptures d’approvisionnement d’une ligne CMS. Chez <b>IAT</b>, un bridage pneumatique a retiré la main de l’opérateur de sous le foret.</span><span class="en">Five internships, from the conventional milling machine to the injection line. At <b>Techniplast</b>, I designed a two-plate mould for a Valeo automotive part and verified the filling in SOLIDWORKS Plastics. At <b>AD Plast</b>, I reworked a bottom-weld station capped at 80 s. At <b>Eleonetech</b>, I drew a two-level conveyor to stop the supply breaks of an SMT line. At <b>IAT</b>, a pneumatic fixture took the operator’s hand away from under the drill.</span></p>
+          <p><span class="fr">Ce portfolio suit l’ordre d’un dossier technique : profil, compétences, stages, puis études de cas et plans. Les chiffres sont ceux des rapports de stage ; les planches cotées sont consultables en images grand format.</span><span class="en">This portfolio follows the order of a technical file: profile, skills, internships, then case studies and drawings. The figures come from the internship reports; dimensioned sheets can be viewed as full-size images.</span></p>
+          <blockquote class="quote"><span class="fr">Un bon outillage ne se voit pas. Il se mesure au temps de cycle qu’il fait gagner.</span><span class="en">A good fixture is invisible. It is measured by the cycle time it saves.</span></blockquote>
+        </div>
+        <aside class="marginalia">
+          <div><b><span class="fr">Méthode</span><span class="en">Method</span></b><p><span class="fr">QQOQCCP, 5M, Ishikawa, Pareto, puis CAO et vérification. Le diagnostic avant le modèle.</span><span class="en">QQOQCCP, 5M, Ishikawa, Pareto, then CAD and verification. Diagnosis before modelling.</span></p></div>
+          <div><b><span class="fr">Livrables</span><span class="en">Deliverables</span></b><p><span class="fr">Rapports, plans cotés, nomenclatures, notices : ce que l’atelier peut réellement fabriquer.</span><span class="en">Reports, dimensioned drawings, BOMs, manuals: what the workshop can actually build.</span></p></div>
+          <div><b><span class="fr">Terrain</span><span class="en">Field</span></b><p><span class="fr">Bizerte puis Paris : usinage, injection, soudure HF, lignes CMS, assemblage aéronautique.</span><span class="en">Bizerte then Paris: machining, moulding, HF welding, SMT lines, aerospace assembly.</span></p></div>
+        </aside>
+      </div>
+
+      <div class="figures">
+        <div class="reveal"><b>05</b><span><span class="fr">stages en entreprise</span><span class="en">company internships</span></span></div>
+        <div class="reveal"><b>06</b><span><span class="fr">certifications SOLIDWORKS</span><span class="en">SOLIDWORKS certifications</span></span></div>
+        <div class="reveal"><b>09</b><span><span class="fr">plans et dossiers</span><span class="en">drawings and packages</span></span></div>
+        <div class="reveal"><b>6</b><span><span class="fr">mois de stage recherchés</span><span class="en">months of internship sought</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 02 COMPÉTENCES ============================ -->
+  <section class="chapter" id="competences">
+    <div class="wrap">
+      <div class="chapter__head">
+        <div class="chapter__num">02</div>
+        <div class="chapter__title">
+          <h2><span class="fr">Compétences</span><span class="en">Skills</span></h2>
+          <p><span class="fr">Quatre familles, vingt gestes de métier, un même réflexe : vérifier avant de livrer.</span><span class="en">Four families, twenty trade skills, one reflex: check before you deliver.</span></p>
+        </div>
+        <div class="chapter__meta smallcaps"><div>Section 02 / 08</div><div>20 <span class="fr">compétences</span><span class="en">skills</span></div></div>
+      </div>
+
+      <div class="skillset">
+        <article class="skillgroup reveal">
+          <h3><i>01</i><span class="fr">Conception mécanique & CAO</span><span class="en">Mechanical design & CAD</span><span>5 / 5</span></h3>
+          <ul>
+            <li>
+              <div class="skill__top"><b>SolidWorks</b><span class="fill"></span><i>95 %</i></div>
+              <div class="gauge"><b data-val="95"></b></div>
+              <p class="skill__note"><span class="fr">Pièces, assemblages, moules et mises en plan — niveau CSWE</span><span class="en">Parts, assemblies, moulds and drawings — CSWE level</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>CATIA V5</b><span class="fill"></span><i>85 %</i></div>
+              <div class="gauge"><b data-val="85"></b></div>
+              <p class="skill__note"><span class="fr">Conception de pièces et sous-ensembles, mises en plan</span><span class="en">Part and sub-assembly design, drawings</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Cotation fonctionnelle</b><span class="fill"></span><i>88 %</i></div>
+              <div class="gauge"><b data-val="88"></b></div>
+              <p class="skill__note"><span class="fr">Chaînes de cotes, ajustements, tolérancement ISO</span><span class="en">Dimension chains, fits, ISO tolerancing</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Conception d’outillages</b><span class="fill"></span><i>86 %</i></div>
+              <div class="gauge"><b data-val="86"></b></div>
+              <p class="skill__note"><span class="fr">Dispositifs de bridage, moules 2 plaques, montages de soudure</span><span class="en">Clamping fixtures, two-plate moulds, welding jigs</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Mise en plan & nomenclature</b><span class="fill"></span><i>90 %</i></div>
+              <div class="gauge"><b data-val="90"></b></div>
+              <p class="skill__note"><span class="fr">Plans d’ensemble, détails, nomenclatures, cartouches</span><span class="en">Assembly drawings, details, BOMs, title blocks</span></p>
+            </li>
+          </ul>
+        </article>
+        <article class="skillgroup reveal">
+          <h3><i>02</i><span class="fr">Simulation & calcul</span><span class="en">Simulation & calculation</span><span>5 / 5</span></h3>
+          <ul>
+            <li>
+              <div class="skill__top"><b>SOLIDWORKS Plastics</b><span class="fill"></span><i>85 %</i></div>
+              <div class="gauge"><b data-val="85"></b></div>
+              <p class="skill__note"><span class="fr">Remplissage, température, point d’injection — moule Push Button</span><span class="en">Filling, temperature, gate location — Push Button mould</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>SOLIDWORKS Simulation</b><span class="fill"></span><i>82 %</i></div>
+              <div class="gauge"><b data-val="82"></b></div>
+              <p class="skill__note"><span class="fr">Contraintes, déplacements, dimensionnement de pièces</span><span class="en">Stress, displacement, part sizing</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>ANSYS</b><span class="fill"></span><i>78 %</i></div>
+              <div class="gauge"><b data-val="78"></b></div>
+              <p class="skill__note"><span class="fr">Analyse par éléments finis, cas académiques</span><span class="en">Finite element analysis, academic cases</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Abaqus</b><span class="fill"></span><i>72 %</i></div>
+              <div class="gauge"><b data-val="72"></b></div>
+              <p class="skill__note"><span class="fr">Calculs avancés, vérification de modèles</span><span class="en">Advanced cases, model verification</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Dimensionnement mécanique</b><span class="fill"></span><i>84 %</i></div>
+              <div class="gauge"><b data-val="84"></b></div>
+              <p class="skill__note"><span class="fr">Choix de matériaux, coefficients de sécurité, vérification</span><span class="en">Material selection, safety factors, verification</span></p>
+            </li>
+          </ul>
+        </article>
+        <article class="skillgroup reveal">
+          <h3><i>03</i><span class="fr">Industrialisation & fabrication</span><span class="en">Industrialisation & manufacturing</span><span>5 / 5</span></h3>
+          <ul>
+            <li>
+              <div class="skill__top"><b>SolidCAM</b><span class="fill"></span><i>80 %</i></div>
+              <div class="gauge"><b data-val="80"></b></div>
+              <p class="skill__note"><span class="fr">FAO, stratégies d’usinage, post-processeurs</span><span class="en">CAM, machining strategies, post-processors</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Fusion 360</b><span class="fill"></span><i>78 %</i></div>
+              <div class="gauge"><b data-val="78"></b></div>
+              <p class="skill__note"><span class="fr">CAO/FAO rapide, prototypage</span><span class="en">Fast CAD/CAM, prototyping</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Systèmes pneumatiques</b><span class="fill"></span><i>84 %</i></div>
+              <div class="gauge"><b data-val="84"></b></div>
+              <p class="skill__note"><span class="fr">Vérins, distributeurs, capteurs, séquencement</span><span class="en">Cylinders, valves, sensors, sequencing</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Procédés de fabrication</b><span class="fill"></span><i>82 %</i></div>
+              <div class="gauge"><b data-val="82"></b></div>
+              <p class="skill__note"><span class="fr">Injection plastique, soudure HF, usinage, pliage</span><span class="en">Injection moulding, HF welding, machining, bending</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Métrologie & contrôle</b><span class="fill"></span><i>78 %</i></div>
+              <div class="gauge"><b data-val="78"></b></div>
+              <p class="skill__note"><span class="fr">Contrôle dimensionnel, plans de contrôle, états de surface</span><span class="en">Dimensional inspection, control plans, surface finish</span></p>
+            </li>
+          </ul>
+        </article>
+        <article class="skillgroup reveal">
+          <h3><i>04</i><span class="fr">Qualité & amélioration continue</span><span class="en">Quality & continuous improvement</span><span>5 / 5</span></h3>
+          <ul>
+            <li>
+              <div class="skill__top"><b>ISO 9001:2015</b><span class="fill"></span><i>84 %</i></div>
+              <div class="gauge"><b data-val="84"></b></div>
+              <p class="skill__note"><span class="fr">Exigences, audits internes, documentation — environnement IAT</span><span class="en">Requirements, internal audits, documentation — IAT environment</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>5M · Ishikawa · Pareto</b><span class="fill"></span><i>88 %</i></div>
+              <div class="gauge"><b data-val="88"></b></div>
+              <p class="skill__note"><span class="fr">Analyse de causes racines sur ligne de production</span><span class="en">Root-cause analysis on a production line</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>QQOQCCP · PDCA</b><span class="fill"></span><i>84 %</i></div>
+              <div class="gauge"><b data-val="84"></b></div>
+              <p class="skill__note"><span class="fr">Cadrage du problème et boucles d’amélioration</span><span class="en">Problem framing and improvement loops</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>AMDEC</b><span class="fill"></span><i>76 %</i></div>
+              <div class="gauge"><b data-val="76"></b></div>
+              <p class="skill__note"><span class="fr">Analyse des modes de défaillance et de leurs effets</span><span class="en">Failure mode and effects analysis</span></p>
+            </li>
+            <li>
+              <div class="skill__top"><b>Rédaction technique</b><span class="fill"></span><i>86 %</i></div>
+              <div class="gauge"><b data-val="86"></b></div>
+              <p class="skill__note"><span class="fr">Rapports de projet, dossiers techniques, notices</span><span class="en">Project reports, technical packages, manuals</span></p>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <dl class="toolrow">
+        <div><dt><span class="fr">CAO / CAM</span><span class="en">CAD / CAM</span></dt><dd>SolidWorks · CATIA V5 · Fusion 360 · SolidCAM · Mastercam</dd></div>
+        <div><dt><span class="fr">Simulation</span><span class="en">Simulation</span></dt><dd>SW Plastics · SW Simulation · ANSYS · Abaqus</dd></div>
+        <div><dt><span class="fr">Qualité</span><span class="en">Quality</span></dt><dd>ISO 9001 · AMDEC · 5M · Ishikawa · Pareto · PDCA</dd></div>
+        <div><dt><span class="fr">Programmation</span><span class="en">Programming</span></dt><dd>Python · C · C++ · Excel avancé · Office 365</dd></div>
+      </dl>
+      <p class="smallcaps" style="margin-top:14px"><span class="fr">Niveaux déclarés, appuyés sur les livrables des stages et les certifications SOLIDWORKS.</span><span class="en">Self-assessed levels, backed by internship deliverables and SOLIDWORKS certifications.</span></p>
+    </div>
+  </section>
+
+  <!-- ============================ 03 STAGES ============================ -->
+  <section class="chapter" id="stages">
+    <div class="wrap">
+      <div class="chapter__head">
+        <div class="chapter__num">03</div>
+        <div class="chapter__title">
+          <h2><span class="fr">Stages</span><span class="en">Internships</span></h2>
+          <p><span class="fr">Cinq entreprises, de l’atelier d’usinage à la ligne d’injection, 2021 – 2025.</span><span class="en">Five companies, from the machining shop to the injection line, 2021 – 2025.</span></p>
+        </div>
+        <div class="chapter__meta smallcaps"><div>Section 03 / 08</div><div><span class="fr">5 stages · 12 mois</span><span class="en">5 internships · 12 months</span></div></div>
+      </div>
+
+      <div class="stages">
+        <article class="stage reveal">
+          <div class="stage__year">2025<span><span class="fr">Juin – août 2025</span><span class="en">June – Aug 2025</span></span><span><span class="fr">3 mois · Bizerte, Tunisie</span><span class="en">3 months · Bizerte, Tunisia</span></span></div>
+          <div class="stage__body">
+            <div class="stage__title"><h3><span class="fr">Stagiaire technicien — conception d’un moule d’injection</span><span class="en">Technician intern — injection mould design</span></h3><span class="stage__co">Techniplast · groupe OneTech</span></div>
+            <p><span class="fr">Conception complète d’un moule d’injection deux plaques pour la pièce « Push Button Mode » d’un système de commande de volume sonore automobile, pour le client Valeo.</span><span class="en">Full design of a two-plate injection mould for the “Push Button Mode” part of an automotive volume-control system, for the client Valeo.</span></p>
+            <ul>
+            <li><span class="fr">Analyse fonctionnelle de la pièce : épaisseurs, dépouilles, contre-dépouilles, plan de joint.</span><span class="en">Part analysis: wall thickness, draft angles, undercuts, parting line.</span></li>
+            <li><span class="fr">Étude rhéologique sous SOLIDWORKS Plastics : point d’injection, remplissage, température.</span><span class="en">Rheological study in SOLIDWORKS Plastics: gate location, filling, temperature.</span></li>
+            <li><span class="fr">Conception du moule : alimentation, refroidissement, éjection, composants standards.</span><span class="en">Mould design: feeding, cooling, ejection, standard components.</span></li>
+            <li><span class="fr">Dossier technique livré : plans, nomenclature, choix des composants.</span><span class="en">Technical package delivered: drawings, bill of materials, component selection.</span></li>
+            </ul>
+          </div>
+          <div class="stage__side">
+            <span class="tag tag--accent"><span class="fr">Stage technique</span><span class="en">Technical internship</span></span>
+            <span class="tag">Bizerte, TN</span>
+          </div>
+        </article>
+        <article class="stage reveal">
+          <div class="stage__year">2024<span><span class="fr">Juillet – août 2024</span><span class="en">July – Aug 2024</span></span><span><span class="fr">2 mois · Bizerte, Tunisie</span><span class="en">2 months · Bizerte, Tunisia</span></span></div>
+          <div class="stage__body">
+            <div class="stage__title"><h3><span class="fr">Stagiaire ouvrier — convoyeur bi-étage pour racks de PCB</span><span class="en">Operator intern — two-level conveyor for PCB racks</span></h3><span class="stage__co">Eleonetech</span></div>
+            <p><span class="fr">Refonte du chargement et du déchargement d’une ligne CMS : un buffer de trois racks pour supprimer les interruptions répétées du flux de cartes électroniques.</span><span class="en">Redesign of the loading and unloading of an SMT line: a three-rack buffer to remove repeated interruptions in the flow of electronic boards.</span></p>
+            <ul>
+            <li><span class="fr">Cartographie du processus et analyse des arrêts de ligne.</span><span class="en">Process mapping and analysis of line stoppages.</span></li>
+            <li><span class="fr">Conception d’un convoyeur à deux étages avec élévateur intégré (3 racks en attente).</span><span class="en">Design of a two-level conveyor with an integrated lift (3 racks buffered).</span></li>
+            <li><span class="fr">Séquencement par capteurs photoélectriques, descente de l’élévateur et évacuation.</span><span class="en">Sequencing with photoelectric sensors, lift descent and evacuation.</span></li>
+            <li><span class="fr">Plan d’ensemble A3, vérifié et coté.</span><span class="en">A3 assembly drawing, checked and dimensioned.</span></li>
+            </ul>
+          </div>
+          <div class="stage__side">
+            <span class="tag tag--accent"><span class="fr">Stage ouvrier</span><span class="en">Operator internship</span></span>
+            <span class="tag">Bizerte, TN</span>
+          </div>
+        </article>
+        <article class="stage reveal">
+          <div class="stage__year">2023<span><span class="fr">Février – mai 2023</span><span class="en">Feb – May 2023</span></span><span><span class="fr">4 mois · Bizerte, Tunisie</span><span class="en">4 months · Bizerte, Tunisia</span></span></div>
+          <div class="stage__body">
+            <div class="stage__title"><h3><span class="fr">Projet de fin d’études — dispositif de soudure de fond</span><span class="en">Final-year project — bottom-weld fixture</span></h3><span class="stage__co">AD Plast</span></div>
+            <p><span class="fr">Sur la ligne « Duffel Bag » (5, 10 et 30 L), le poste de soudure de fond durait 80 s et générait des rebuts. Conception d’un dispositif de maintien pneumatique complet, plans à l’appui.</span><span class="en">On the “Duffel Bag” line (5, 10 and 30 L), the bottom-weld station took 80 s and generated scrap. Design of a complete pneumatic holding fixture, drawings included.</span></p>
+            <ul>
+            <li><span class="fr">Chronométrage du cycle, QQOQCCP, 5M, Ishikawa et Pareto pour hiérarchiser les causes.</span><span class="en">Cycle time measurement, QQOQCCP, 5M, Ishikawa and Pareto to rank the causes.</span></li>
+            <li><span class="fr">Analyse fonctionnelle : bête à cornes, diagramme Pieuvre, F.A.S.T.</span><span class="en">Functional analysis: need statement, octopus diagram, F.A.S.T.</span></li>
+            <li><span class="fr">Conception du dispositif : base inférieure et supérieure, plaques de serrage et de pliage, électrode, plateau d’aspiration-évacuation.</span><span class="en">Fixture design: lower and upper base, clamping and bending plates, electrode, vacuum and ejection plate.</span></li>
+            <li><span class="fr">Dossier technique de 8 plans cotés, vérifiés et mis en plan sous SolidWorks.</span><span class="en">Technical package of 8 dimensioned drawings, checked and produced in SolidWorks.</span></li>
+            </ul>
+          </div>
+          <div class="stage__side">
+            <span class="tag tag--accent"><span class="fr">PFE · en binôme</span><span class="en">Final project · in pairs</span></span>
+            <span class="tag">Bizerte, TN</span>
+<a class="side-doc" href="#plans">
+              <span class="lbl"><span class="fr">Dossier technique</span><span class="en">Drawing package</span></span><em>8 plans</em></a>
+          </div>
+        </article>
+        <article class="stage reveal">
+          <div class="stage__year">2022<span><span class="fr">17 janvier – 12 février 2022</span><span class="en">17 Jan – 12 Feb 2022</span></span><span><span class="fr">1 mois · Bizerte, Tunisie</span><span class="en">1 month · Bizerte, Tunisia</span></span></div>
+          <div class="stage__body">
+            <div class="stage__title"><h3><span class="fr">Stage de perfectionnement — bridage pneumatique de perçage</span><span class="en">Improvement internship — pneumatic drilling fixture</span></h3><span class="stage__co">Industries Aéronautiques Tunisiennes (IAT)</span></div>
+            <p><span class="fr">Sur un poste de perçage de pièces aéronautiques, la pièce était tenue à la main sous le foret : risque pour l’opérateur, centrage aléatoire et rebuts. Remplacement par un montage pneumatique guidé.</span><span class="en">On an aeronautical drilling station, parts were held by hand under the drill: operator risk, unreliable centring and scrap. Replaced by a guided pneumatic fixture.</span></p>
+            <ul>
+            <li><span class="fr">Observation du poste : modes opératoires, rotation des pièces, centrage du trou, sécurité.</span><span class="en">Workstation study: procedures, part rotation, hole centring, safety.</span></li>
+            <li><span class="fr">Conception du montage : vérin, plaque mobile, axes de guidage, table à trous.</span><span class="en">Fixture design: cylinder, moving plate, guide axes, hole table.</span></li>
+            <li><span class="fr">Commande par pédale pour libérer les deux mains ; centrage assuré par le montage.</span><span class="en">Foot-pedal control to free both hands; centring ensured by the fixture.</span></li>
+            <li><span class="fr">Vérification en coupe : course, effort de serrage, dégagement du foret.</span><span class="en">Section check: stroke, clamping force, drill clearance.</span></li>
+            </ul>
+          </div>
+          <div class="stage__side">
+            <span class="tag tag--accent"><span class="fr">Stage · aéronautique</span><span class="en">Internship · aerospace</span></span>
+            <span class="tag">Bizerte, TN</span>
+          </div>
+        </article>
+        <article class="stage reveal">
+          <div class="stage__year">2021<span><span class="fr">Juillet – août 2021</span><span class="en">July – Aug 2021</span></span><span><span class="fr">2 mois · Bizerte, Tunisie</span><span class="en">2 months · Bizerte, Tunisia</span></span></div>
+          <div class="stage__body">
+            <div class="stage__title"><h3><span class="fr">Stage d’initiation — modélisation mécanique</span><span class="en">Introductory internship — mechanical modelling</span></h3><span class="stage__co">German Fraise Technique (GEFTECH)</span></div>
+            <p><span class="fr">Premier contact avec l’atelier d’usinage : lecture de plans, relevé de cotes et modélisation 3D de pièces existantes.</span><span class="en">First contact with the machining workshop: drawing reading, dimensional survey and 3D modelling of existing parts.</span></p>
+            <ul>
+            <li><span class="fr">Fraisage conventionnel et à commande numérique.</span><span class="en">Conventional and CNC milling.</span></li>
+            <li><span class="fr">Lecture de plans, tolérances et ajustements.</span><span class="en">Drawing reading, tolerances and fits.</span></li>
+            <li><span class="fr">Relevé de cotes sur pièces réelles, modélisation volumique et mises en plan.</span><span class="en">Dimensional surveys on real parts, solid modelling and drawings.</span></li>
+            <li><span class="fr">Contrôle dimensionnel au pied à coulisse.</span><span class="en">Dimensional inspection with a calliper.</span></li>
+            </ul>
+          </div>
+          <div class="stage__side">
+            <span class="tag tag--accent"><span class="fr">Stage d’initiation</span><span class="en">Introductory internship</span></span>
+            <span class="tag">Bizerte, TN</span>
+            
+          </div>
+        </article>
+      </div>
+      <p class="smallcaps" style="margin-top:16px"><span class="fr">Cette édition présente les travaux en images et en vidéos ; les rapports de stage sont fournis séparément, sur demande.</span><span class="en">This edition presents the work through images and videos; internship reports are provided separately on request.</span></p>
+    </div>
+  </section>
+
+  <!-- ============================ 04 ÉTUDES DE CAS ============================ -->
+  <section class="chapter" id="etudes">
+    <div class="wrap">
+      <div class="chapter__head">
+        <div class="chapter__num">04</div>
+        <div class="chapter__title">
+          <h2><span class="fr">Études de cas</span><span class="en">Case studies</span></h2>
+          <p><span class="fr">Quatre dossiers menés du diagnostic à la planche : moule, convoyeur, dispositif de soudure, bridage aéronautique.</span><span class="en">Four projects taken from diagnosis to drawing: mould, conveyor, welding fixture, aerospace clamping.</span></p>
+        </div>
+        <div class="chapter__meta smallcaps"><div>Section 04 / 08</div><div><span class="fr">4 dossiers · 24 figures</span><span class="en">4 cases · 24 figures</span></div></div>
+      </div>
+
+      <article class="dossier reveal" id="d-01">
+        <div class="dossier__head">
+          <div>
+            <p class="dossier__ref">D-01 <s>/</s> Techniplast / OneTech · 2025</p>
+            <h3><span class="fr">Moule d’injection deux plaques — Push Button Mode</span><span class="en">Two-plate injection mould — Push Button Mode</span></h3>
+            <p class="dossier__lead"><span class="fr">Une pièce de commande de volume sonore pour Valeo, un moule complet à concevoir en trois mois, et une seule question : où placer l’injection pour remplir sans défaut ?</span><span class="en">A volume-control part for Valeo, a complete mould to design in three months, and one question: where to place the gate so the cavity fills without defects?</span></p>
+          </div>
+          <dl class="metatable">
+            <div><dt><span class="fr">Client</span><span class="en">Client</span></dt><dd class=""><span class="fr">Valeo · via Techniplast</span><span class="en">Valeo · through Techniplast</span></dd></div>
+            <div><dt><span class="fr">Pièce</span><span class="en">Part</span></dt><dd class=""><span class="fr">Push Button Mode — PA66</span><span class="en">Push Button Mode — PA66</span></dd></div>
+            <div><dt><span class="fr">Étude</span><span class="en">Study</span></dt><dd class=""><span class="fr">SOLIDWORKS Plastics</span><span class="en">SOLIDWORKS Plastics</span></dd></div>
+            <div><dt><span class="fr">Maillage</span><span class="en">Mesh</span></dt><dd class=""><span class="fr">19 698 éléments</span><span class="en">19,698 elements</span></dd></div>
+            <div><dt><span class="fr">Remplissage</span><span class="en">Fill time</span></dt><dd class="o"><span class="fr">1,0863 s</span><span class="en">1.0863 s</span></dd></div>
+            <div><dt><span class="fr">Livrable</span><span class="en">Deliverable</span></dt><dd class=""><span class="fr">Moule 2 plaques</span><span class="en">Two-plate mould</span></dd></div>
+          </dl>
+        </div>
+        <div class="plates">
+          <figure class="plate plate--contain" data-zoom="assets/img/mold-cav.jpg" data-cap="FIG. 1.1 · Empreinte — cavité">
+            <div class="plate__frame"><img src="assets/img/mold-cav.jpg" alt="FIG. 1.1 — Empreinte — cavité" loading="lazy"></div>
+            <figcaption><b>FIG. 1.1</b><span class="fr">Empreinte — cavité</span><span class="en">Cavity side</span></figcaption>
+          </figure>
+          <figure class="plate plate--contain" data-zoom="assets/img/mold-core.jpg" data-cap="FIG. 1.2 · Noyau — partie mobile">
+            <div class="plate__frame"><img src="assets/img/mold-core.jpg" alt="FIG. 1.2 — Noyau — partie mobile" loading="lazy"></div>
+            <figcaption><b>FIG. 1.2</b><span class="fr">Noyau — partie mobile</span><span class="en">Core side</span></figcaption>
+          </figure>
+          <figure class="plate plate--contain" data-zoom="assets/img/mold-fill.jpg" data-cap="FIG. 1.3 · Remplissage SOLIDWORKS Plastics">
+            <div class="plate__frame"><img src="assets/img/mold-fill.jpg" alt="FIG. 1.3 — Remplissage SOLIDWORKS Plastics" loading="lazy"></div>
+            <figcaption><b>FIG. 1.3</b><span class="fr">Remplissage SOLIDWORKS Plastics</span><span class="en">SOLIDWORKS Plastics filling</span></figcaption>
+          </figure>
+        </div>
+        <div class="plates plates--2">
+          <figure class="plate videoplate" data-video>
+            <div class="plate__frame">
+              <video preload="none" playsinline muted loop poster="assets/media/moule-rotation-poster.jpg">
+                <source src="assets/media/moule-rotation.mp4" type="video/mp4">
+              </video>
+              <span class="videoplate__badge">MP4 · 15 s</span>
+              <span class="videoplate__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></span>
+            </div>
+            <figcaption><b>FIG. 1.4</b><span class="fr">Rotation du moule — animation</span><span class="en">Mould rotation — animation</span></figcaption>
+          </figure>
+          <figure class="plate videoplate" data-video>
+            <div class="plate__frame">
+              <video preload="none" playsinline muted loop poster="assets/media/remplissage-poster.jpg">
+                <source src="assets/media/remplissage.mp4" type="video/mp4">
+              </video>
+              <span class="videoplate__badge">MP4 · 15 s</span>
+              <span class="videoplate__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></span>
+            </div>
+            <figcaption><b>FIG. 1.5</b><span class="fr">Remplissage, de la carotte à la pièce</span><span class="en">Filling, from sprue to part</span></figcaption>
+          </figure>
+        </div>
+        <div class="plates plates--1">
+          <figure class="plate plate--wide plate--free" data-zoom="assets/img/moule-eclate.png" data-cap="FIG. 1.6 · Vue éclatée : plaques, empreinte, éjection">
+            <div class="plate__frame"><img src="assets/img/moule-eclate.png" alt="FIG. 1.6 — Vue éclatée : plaques, empreinte, éjection" loading="lazy"></div>
+            <figcaption><b>FIG. 1.6</b><span class="fr">Vue éclatée : plaques, empreinte, éjection</span><span class="en">Exploded view: plates, cavity, ejection</span></figcaption>
+          </figure>
+        </div>
+      <div class="steps"><div>
+              <b>Étape 01</b>
+              <h4><span class="fr">Analyse de la pièce</span><span class="en">Part analysis</span></h4>
+              <p><span class="fr">Dépouilles, contre-dépouilles, plan de joint et zone d’injection : la pièce impose le moule.</span><span class="en">Draft angles, undercuts, parting line and gate area: the part dictates the mould.</span></p>
+            </div>
+        <div>
+              <b>Étape 02</b>
+              <h4><span class="fr">Rhéologie</span><span class="en">Rheology</span></h4>
+              <p><span class="fr">Maillage à 19 698 éléments, remplissage en 1,0863 s, contrôle des fronts de matière et des températures.</span><span class="en">Mesh of 19,698 elements, 1.0863 s fill time, checks on flow fronts and temperatures.</span></p>
+            </div>
+        <div>
+              <b>Étape 03</b>
+              <h4><span class="fr">Conception & dossier</span><span class="en">Design & package</span></h4>
+              <p><span class="fr">Alimentation, refroidissement, éjection et composants standards ; plans et nomenclature livrés.</span><span class="en">Feeding, cooling, ejection and standard components; drawings and BOM delivered.</span></p>
+            </div>
+      </div>
+      <div class="docsbox">
+        <a class="doclink" href="#d-01"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg><span class="fr">Voir les figures</span><span class="en">See figures</span></a>
+      </div>
+      </article>
+
+      <article class="dossier reveal" id="d-02">
+        <div class="dossier__head">
+          <div>
+            <p class="dossier__ref">D-02 <s>/</s> Eleonetech · 2024</p>
+            <h3><span class="fr">Convoyeur bi-étage pour racks de PCB</span><span class="en">Two-level conveyor for PCB racks</span></h3>
+            <p class="dossier__lead"><span class="fr">La ligne CMS s’arrêtait à chaque changement de rack. Un buffer de trois racks, à deux niveaux, rend le chargement et le déchargement continus sur un sol étroit.</span><span class="en">The SMT line stopped at every rack change. A three-rack buffer on two levels makes loading and unloading continuous on a narrow floor area.</span></p>
+          </div>
+          <dl class="metatable">
+            <div><dt><span class="fr">Ligne</span><span class="en">Line</span></dt><dd class=""><span class="fr">CMS — chargement / déchargement</span><span class="en">SMT — loading / unloading</span></dd></div>
+            <div><dt><span class="fr">Besoin</span><span class="en">Need</span></dt><dd class=""><span class="fr">3 racks en tampon</span><span class="en">3 racks buffered</span></dd></div>
+            <div><dt><span class="fr">Capteurs</span><span class="en">Sensors</span></dt><dd class=""><span class="fr">4 photoélectriques</span><span class="en">4 photoelectric</span></dd></div>
+            <div><dt><span class="fr">Élévateur</span><span class="en">Lift</span></dt><dd class=""><span class="fr">Course verticale intégrée</span><span class="en">Integrated vertical stroke</span></dd></div>
+            <div><dt><span class="fr">Plan</span><span class="en">Drawing</span></dt><dd class="o"><span class="fr">A3 · 1:13</span><span class="en">A3 · 1:13</span></dd></div>
+            <div><dt><span class="fr">Livrable</span><span class="en">Deliverable</span></dt><dd class=""><span class="fr">Convoyeur complet</span><span class="en">Complete conveyor</span></dd></div>
+          </dl>
+        </div>
+        <div class="plates plates--2">
+          <figure class="plate plate--free" data-zoom="assets/img/cms-problematique.jpg" data-cap="FIG. 2.1 · Le problème : ligne arrêtée, racks en attente">
+            <div class="plate__frame"><img src="assets/img/cms-problematique.jpg" alt="FIG. 2.1 — Le problème : ligne arrêtée, racks en attente" loading="lazy"></div>
+            <figcaption><b>FIG. 2.1</b><span class="fr">Le problème : ligne arrêtée, racks en attente</span><span class="en">The problem: line stopped, racks waiting</span></figcaption>
+          </figure>
+          <figure class="plate plate--free" data-zoom="assets/img/cms-solution.jpg" data-cap="FIG. 2.2 · Solution retenue — convoyeur bi-étage">
+            <div class="plate__frame"><img src="assets/img/cms-solution.jpg" alt="FIG. 2.2 — Solution retenue — convoyeur bi-étage" loading="lazy"></div>
+            <figcaption><b>FIG. 2.2</b><span class="fr">Solution retenue — convoyeur bi-étage</span><span class="en">Selected solution — two-level conveyor</span></figcaption>
+          </figure>
+        </div>
+        <div class="plates">
+          <figure class="plate plate--free" data-zoom="assets/img/cms-principe-chargeur.jpg" data-cap="FIG. 2.3 · Principe de chargement">
+            <div class="plate__frame"><img src="assets/img/cms-principe-chargeur.jpg" alt="FIG. 2.3 — Principe de chargement" loading="lazy"></div>
+            <figcaption><b>FIG. 2.3</b><span class="fr">Principe de chargement</span><span class="en">Loading principle</span></figcaption>
+          </figure>
+          <figure class="plate plate--free" data-zoom="assets/img/cms-principe-dechargeur.jpg" data-cap="FIG. 2.4 · Principe de déchargement">
+            <div class="plate__frame"><img src="assets/img/cms-principe-dechargeur.jpg" alt="FIG. 2.4 — Principe de déchargement" loading="lazy"></div>
+            <figcaption><b>FIG. 2.4</b><span class="fr">Principe de déchargement</span><span class="en">Unloading principle</span></figcaption>
+          </figure>
+          <figure class="plate plate--free" data-zoom="assets/img/cms-processus.jpg" data-cap="FIG. 2.5 · Processus et flux de cartes">
+            <div class="plate__frame"><img src="assets/img/cms-processus.jpg" alt="FIG. 2.5 — Processus et flux de cartes" loading="lazy"></div>
+            <figcaption><b>FIG. 2.5</b><span class="fr">Processus et flux de cartes</span><span class="en">Process and board flow</span></figcaption>
+          </figure>
+        </div>
+        <div class="plates">
+          <figure class="plate plate--free" data-zoom="assets/img/cms-chargeur.jpg" data-cap="FIG. 2.6 · Poste de chargement">
+            <div class="plate__frame"><img src="assets/img/cms-chargeur.jpg" alt="FIG. 2.6 — Poste de chargement" loading="lazy"></div>
+            <figcaption><b>FIG. 2.6</b><span class="fr">Poste de chargement</span><span class="en">Loading station</span></figcaption>
+          </figure>
+          <figure class="plate plate--free" data-zoom="assets/img/cms-dechargeur.jpg" data-cap="FIG. 2.7 · Poste de déchargement">
+            <div class="plate__frame"><img src="assets/img/cms-dechargeur.jpg" alt="FIG. 2.7 — Poste de déchargement" loading="lazy"></div>
+            <figcaption><b>FIG. 2.7</b><span class="fr">Poste de déchargement</span><span class="en">Unloading station</span></figcaption>
+          </figure>
+          <figure class="plate plate--free" data-zoom="assets/img/cms-terrain.jpg" data-cap="FIG. 2.8 · Relevé sur le terrain">
+            <div class="plate__frame"><img src="assets/img/cms-terrain.jpg" alt="FIG. 2.8 — Relevé sur le terrain" loading="lazy"></div>
+            <figcaption><b>FIG. 2.8</b><span class="fr">Relevé sur le terrain</span><span class="en">On-site survey</span></figcaption>
+          </figure>
+        </div>
+      <div class="steps"><div>
+              <b>Étape 01</b>
+              <h4><span class="fr">Relevé du flux</span><span class="en">Flow survey</span></h4>
+              <p><span class="fr">Observation de la ligne CMS : cadence, arrêts, gestes de l’opérateur, encombrement au sol.</span><span class="en">SMT line observation: cycle rate, stoppages, operator movements, floor space.</span></p>
+            </div>
+        <div>
+              <b>Étape 02</b>
+              <h4><span class="fr">Architecture</span><span class="en">Architecture</span></h4>
+              <p><span class="fr">Un étage pour l’attente, un élévateur, un étage pour l’évacuation : trois racks tamponnés.</span><span class="en">One level for buffering, a lift, one level for evacuation: three racks in the buffer.</span></p>
+            </div>
+        <div>
+              <b>Étape 03</b>
+              <h4><span class="fr">Séquencement & plan</span><span class="en">Sequencing & drawing</span></h4>
+              <p><span class="fr">Quatre capteurs photoélectriques, descente de l’élévateur, puis plan d’ensemble A3 au 1:13.</span><span class="en">Four photoelectric sensors, lift descent, then an A3 assembly drawing at 1:13.</span></p>
+            </div>
+      </div>
+      </article>
+
+      <article class="dossier reveal" id="d-03">
+        <div class="dossier__head">
+          <div>
+            <p class="dossier__ref">D-03 <s>/</s> AD Plast · 2023</p>
+            <h3><span class="fr">Dispositif pneumatique de soudure de fond</span><span class="en">Pneumatic bottom-weld fixture</span></h3>
+            <p class="dossier__lead"><span class="fr">Le poste de soudure de fond des sacs « Duffel Bag » tenait la cadence à 80 s. Après diagnostic, le cycle tombe à 39, 40, 35 et 28 s selon le format, rebuts en baisse.</span><span class="en">The bottom-weld station on the “Duffel Bag” bags capped the cycle at 80 s. After diagnosis, the cycle drops to 39, 40, 35 and 28 s depending on size, with less scrap.</span></p>
+          </div>
+          <dl class="metatable">
+            <div><dt><span class="fr">Ligne</span><span class="en">Line</span></dt><dd class=""><span class="fr">Duffel Bag 5 / 10 / 30 L</span><span class="en">Duffel Bag 5 / 10 / 30 L</span></dd></div>
+            <div><dt><span class="fr">Cycle avant</span><span class="en">Cycle before</span></dt><dd class=""><span class="fr">80 s</span><span class="en">80 s</span></dd></div>
+            <div><dt><span class="fr">Cycle après</span><span class="en">Cycle after</span></dt><dd class="o"><span class="fr">39 / 40 / 35 / 28 s</span><span class="en">39 / 40 / 35 / 28 s</span></dd></div>
+            <div><dt><span class="fr">Moyens</span><span class="en">Equipment</span></dt><dd class=""><span class="fr">Presse HF 154</span><span class="en">HF press 154</span></dd></div>
+            <div><dt><span class="fr">Plans</span><span class="en">Drawings</span></dt><dd class=""><span class="fr">8 planches cotées</span><span class="en">8 dimensioned sheets</span></dd></div>
+            <div><dt><span class="fr">Livrable</span><span class="en">Deliverable</span></dt><dd class=""><span class="fr">Dispositif complet + 8 planches</span><span class="en">Complete fixture + 8 sheets</span></dd></div>
+          </dl>
+        </div>
+        <div class="plates">
+          <figure class="plate " data-zoom="assets/img/adplast-press.jpg" data-cap="FIG. 3.1 · Presse HF 154 — poste de soudure">
+            <div class="plate__frame"><img src="assets/img/adplast-press.jpg" alt="FIG. 3.1 — Presse HF 154 — poste de soudure" loading="lazy"></div>
+            <figcaption><b>FIG. 3.1</b><span class="fr">Presse HF 154 — poste de soudure</span><span class="en">HF press 154 — welding station</span></figcaption>
+          </figure>
+          <figure class="plate " data-zoom="assets/img/adplast-hf.jpg" data-cap="FIG. 3.2 · Soudure haute fréquence">
+            <div class="plate__frame"><img src="assets/img/adplast-hf.jpg" alt="FIG. 3.2 — Soudure haute fréquence" loading="lazy"></div>
+            <figcaption><b>FIG. 3.2</b><span class="fr">Soudure haute fréquence</span><span class="en">High-frequency welding</span></figcaption>
+          </figure>
+          <figure class="plate " data-zoom="assets/img/adplast-clamp.jpg" data-cap="FIG. 3.3 · Maintien de la pièce">
+            <div class="plate__frame"><img src="assets/img/adplast-clamp.jpg" alt="FIG. 3.3 — Maintien de la pièce" loading="lazy"></div>
+            <figcaption><b>FIG. 3.3</b><span class="fr">Maintien de la pièce</span><span class="en">Part clamping</span></figcaption>
+          </figure>
+        </div>
+        <div class="plates plates--2">
+          <figure class="plate plate--contain" data-zoom="assets/img/AD-Plast-01-Assemblage-total.jpg" data-cap="FIG. 3.4 · Assemblage total">
+            <div class="plate__frame"><img src="assets/img/AD-Plast-01-Assemblage-total.jpg" alt="FIG. 3.4 — Assemblage total" loading="lazy"></div>
+            <figcaption><b>FIG. 3.4</b><span class="fr">Assemblage total</span><span class="en">General assembly</span></figcaption>
+          </figure>
+          <figure class="plate plate--contain" data-zoom="assets/img/AD-Plast-04-Plaque-de-serrage.jpg" data-cap="FIG. 3.5 · Plaque de serrage">
+            <div class="plate__frame"><img src="assets/img/AD-Plast-04-Plaque-de-serrage.jpg" alt="FIG. 3.5 — Plaque de serrage" loading="lazy"></div>
+            <figcaption><b>FIG. 3.5</b><span class="fr">Plaque de serrage</span><span class="en">Clamping plate</span></figcaption>
+          </figure>
+          <figure class="plate plate--contain" data-zoom="assets/img/AD-Plast-07-Plateau-aspiration.jpg" data-cap="FIG. 3.6 · Plateau d’aspiration">
+            <div class="plate__frame"><img src="assets/img/AD-Plast-07-Plateau-aspiration.jpg" alt="FIG. 3.6 — Plateau d’aspiration" loading="lazy"></div>
+            <figcaption><b>FIG. 3.6</b><span class="fr">Plateau d’aspiration</span><span class="en">Vacuum plate</span></figcaption>
+          </figure>
+          <figure class="plate plate--contain" data-zoom="assets/img/AD-Plast-02-Base-inferieure.jpg" data-cap="FIG. 3.7 · Base inférieure">
+            <div class="plate__frame"><img src="assets/img/AD-Plast-02-Base-inferieure.jpg" alt="FIG. 3.7 — Base inférieure" loading="lazy"></div>
+            <figcaption><b>FIG. 3.7</b><span class="fr">Base inférieure</span><span class="en">Lower base</span></figcaption>
+          </figure>
+        </div>
+      <div class="steps"><div>
+              <b>Étape 01</b>
+              <h4><span class="fr">Mesure & diagnostic</span><span class="en">Measurement & diagnosis</span></h4>
+              <p><span class="fr">Cycle chronométré à 80 s, QQOQCCP, 5M, Ishikawa puis Pareto pour isoler les causes majeures.</span><span class="en">Cycle timed at 80 s, QQOQCCP, 5M, Ishikawa then Pareto to isolate the main causes.</span></p>
+            </div>
+        <div>
+              <b>Étape 02</b>
+              <h4><span class="fr">Conception du dispositif</span><span class="en">Fixture design</span></h4>
+              <p><span class="fr">Bases inférieure et supérieure, plaques de serrage et de pliage, électrode, plateau d’aspiration.</span><span class="en">Lower and upper bases, clamping and bending plates, electrode, vacuum plate.</span></p>
+            </div>
+        <div>
+              <b>Étape 03</b>
+              <h4><span class="fr">Mise en plan</span><span class="en">Drawings</span></h4>
+              <p><span class="fr">Huit planches cotées et vérifiées sous SolidWorks, assemblées et contrôlées en coupe.</span><span class="en">Eight dimensioned and checked SolidWorks sheets, assembled and verified in section.</span></p>
+            </div>
+      </div>
+      <div class="docsbox">
+        <a class="doclink" href="#plans"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg><span class="fr">Registre des plans</span><span class="en">Drawing register</span></a>
+      </div>
+      </article>
+
+      <article class="dossier reveal" id="d-04">
+        <div class="dossier__head">
+          <div>
+            <p class="dossier__ref">D-04 <s>/</s> IAT · 2022</p>
+            <h3><span class="fr">Bridage pneumatique de perçage — aéronautique</span><span class="en">Pneumatic drilling fixture — aerospace</span></h3>
+            <p class="dossier__lead"><span class="fr">Sur un poste de perçage aéronautique, la pièce était tenue à la main sous le foret. Un montage pneumatique guidé, commandé au pied, remplace la main de l’opérateur.</span><span class="en">On an aerospace drilling station, the part was held by hand under the drill. A guided pneumatic fixture, foot-operated, replaces the operator’s hand.</span></p>
+          </div>
+          <dl class="metatable">
+            <div><dt><span class="fr">Secteur</span><span class="en">Sector</span></dt><dd class=""><span class="fr">Aéronautique · EN 9100</span><span class="en">Aerospace · EN 9100</span></dd></div>
+            <div><dt><span class="fr">Opération</span><span class="en">Operation</span></dt><dd class=""><span class="fr">Perçage de pièces</span><span class="en">Drilling of parts</span></dd></div>
+            <div><dt><span class="fr">Solution</span><span class="en">Solution</span></dt><dd class=""><span class="fr">Montage pneumatique guidé</span><span class="en">Guided pneumatic fixture</span></dd></div>
+            <div><dt><span class="fr">Commande</span><span class="en">Control</span></dt><dd class=""><span class="fr">Pédale — deux mains libres</span><span class="en">Foot pedal — both hands free</span></dd></div>
+            <div><dt><span class="fr">Livrable</span><span class="en">Deliverable</span></dt><dd class=""><span class="fr">Montage pneumatique 3D</span><span class="en">3D pneumatic fixture</span></dd></div>
+          </dl>
+        </div>
+        <div class="plates">
+          <figure class="plate " data-zoom="assets/img/iat-op.jpg" data-cap="FIG. 4.1 · Poste de perçage — situation initiale">
+            <div class="plate__frame"><img src="assets/img/iat-op.jpg" alt="FIG. 4.1 — Poste de perçage — situation initiale" loading="lazy"></div>
+            <figcaption><b>FIG. 4.1</b><span class="fr">Poste de perçage — situation initiale</span><span class="en">Drilling station — initial situation</span></figcaption>
+          </figure>
+          <figure class="plate " data-zoom="assets/img/iat-jig.jpg" data-cap="FIG. 4.2 · Montage pneumatique guidé">
+            <div class="plate__frame"><img src="assets/img/iat-jig.jpg" alt="FIG. 4.2 — Montage pneumatique guidé" loading="lazy"></div>
+            <figcaption><b>FIG. 4.2</b><span class="fr">Montage pneumatique guidé</span><span class="en">Guided pneumatic fixture</span></figcaption>
+          </figure>
+          <figure class="plate " data-zoom="assets/img/iat-real.jpg" data-cap="FIG. 4.3 · Montage en position">
+            <div class="plate__frame"><img src="assets/img/iat-real.jpg" alt="FIG. 4.3 — Montage en position" loading="lazy"></div>
+            <figcaption><b>FIG. 4.3</b><span class="fr">Montage en position</span><span class="en">Fixture in position</span></figcaption>
+          </figure>
+        </div>
+      <ul class="bullets">
+        <li><span class="fr">Sécurité : la pièce n’est plus tenue à la main sous le foret ; la commande par pédale libère les deux mains.</span><span class="en">Safety: the part is no longer held by hand under the drill; the foot pedal frees both hands.</span></li>
+        <li><span class="fr">Centrage : le montage assure la position du trou, la rotation des pièces devient reproductible.</span><span class="en">Centring: the fixture sets the hole position, part rotation becomes repeatable.</span></li>
+        <li><span class="fr">Vérification : course du vérin, effort de serrage et dégagement du foret contrôlés en coupe.</span><span class="en">Verification: cylinder stroke, clamping force and drill clearance checked in section.</span></li>
+        <li><span class="fr">Contexte aéronautique : exigences de traçabilité et de contrôle dimensionnel (EN 9100).</span><span class="en">Aerospace context: traceability and dimensional inspection requirements (EN 9100).</span></li>
+      </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================ 05 DOSSIER TECHNIQUE ============================ -->
+  <section class="chapter" id="plans">
+    <div class="wrap">
+      <div class="chapter__head">
+        <div class="chapter__num">05</div>
+        <div class="chapter__title">
+          <h2><span class="fr">Dossier technique</span><span class="en">Technical package</span></h2>
+          <p><span class="fr">Huit planches cotées du dispositif AD Plast, vérifiées et mises en plan sous SolidWorks, plus le plan d’ensemble du convoyeur Eleonetech. Chaque fiche est consultable en grand format JPG.</span><span class="en">Eight dimensioned sheets for the AD Plast fixture, checked and produced in SolidWorks, plus the Eleonetech conveyor assembly drawing. Each sheet can be viewed as a full-size JPG.</span></p>
+        </div>
+        <div class="chapter__meta smallcaps"><div>Section 05 / 08</div><div><span class="fr">9 planches · A3 / A4</span><span class="en">9 sheets · A3 / A4</span></div></div>
+      </div>
+
+
+      <div class="register">
+        <div class="register__row register__head">
+          <span><span class="fr">Vue</span><span class="en">View</span></span><span class="hd"><span class="fr">Désignation · référence</span><span class="en">Title · reference</span></span>
+          <span class="reg__meta"><span><span class="fr">Réf.</span><span class="en">Ref.</span></span><span><span class="fr">Format</span><span class="en">Size</span></span><span><span class="fr">Éch.</span><span class="en">Scale</span></span><span><span class="fr">Projet</span><span class="en">Project</span></span></span>
+          <span></span>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/AD-Plast-01-Assemblage-total.jpg" data-zoom="assets/img/AD-Plast-01-Assemblage-total.jpg" data-cap="PL-01 · Assemblage total" aria-label="Assemblage total — agrandir">
+            <img src="assets/img/AD-Plast-01-Assemblage-total.jpg" alt="Assemblage total" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Assemblage total</span><span class="en">General assembly</span><span class="org">AD Plast · 2023</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-01</span><span>A3</span><span>1:6</span><span class="proj">Duffel Bag</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/AD-Plast-01-Assemblage-total.jpg" data-zoom="assets/img/AD-Plast-01-Assemblage-total.jpg" data-cap="PL-01 · Assemblage total"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/AD-Plast-02-Base-inferieure.jpg" data-zoom="assets/img/AD-Plast-02-Base-inferieure.jpg" data-cap="PL-02 · Base inférieure" aria-label="Base inférieure — agrandir">
+            <img src="assets/img/AD-Plast-02-Base-inferieure.jpg" alt="Base inférieure" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Base inférieure</span><span class="en">Lower base</span><span class="org">AD Plast · 2023</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-02</span><span>A4</span><span>1:6</span><span class="proj">Duffel Bag</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/AD-Plast-02-Base-inferieure.jpg" data-zoom="assets/img/AD-Plast-02-Base-inferieure.jpg" data-cap="PL-02 · Base inférieure"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/AD-Plast-03-Base-superieure.jpg" data-zoom="assets/img/AD-Plast-03-Base-superieure.jpg" data-cap="PL-03 · Base supérieure" aria-label="Base supérieure — agrandir">
+            <img src="assets/img/AD-Plast-03-Base-superieure.jpg" alt="Base supérieure" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Base supérieure</span><span class="en">Upper base</span><span class="org">AD Plast · 2023</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-03</span><span>A4</span><span>1:7</span><span class="proj">Duffel Bag</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/AD-Plast-03-Base-superieure.jpg" data-zoom="assets/img/AD-Plast-03-Base-superieure.jpg" data-cap="PL-03 · Base supérieure"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/AD-Plast-04-Plaque-de-serrage.jpg" data-zoom="assets/img/AD-Plast-04-Plaque-de-serrage.jpg" data-cap="PL-04 · Plaque de serrage" aria-label="Plaque de serrage — agrandir">
+            <img src="assets/img/AD-Plast-04-Plaque-de-serrage.jpg" alt="Plaque de serrage" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Plaque de serrage</span><span class="en">Clamping plate</span><span class="org">AD Plast · 2023</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-04</span><span>A4</span><span>1:2</span><span class="proj">Duffel Bag</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/AD-Plast-04-Plaque-de-serrage.jpg" data-zoom="assets/img/AD-Plast-04-Plaque-de-serrage.jpg" data-cap="PL-04 · Plaque de serrage"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/AD-Plast-05-Plaque-de-pliage.jpg" data-zoom="assets/img/AD-Plast-05-Plaque-de-pliage.jpg" data-cap="PL-05 · Plaque de pliage" aria-label="Plaque de pliage — agrandir">
+            <img src="assets/img/AD-Plast-05-Plaque-de-pliage.jpg" alt="Plaque de pliage" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Plaque de pliage</span><span class="en">Bending plate</span><span class="org">AD Plast · 2023</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-05</span><span>A4</span><span>1:2</span><span class="proj">Duffel Bag</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/AD-Plast-05-Plaque-de-pliage.jpg" data-zoom="assets/img/AD-Plast-05-Plaque-de-pliage.jpg" data-cap="PL-05 · Plaque de pliage"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/AD-Plast-06-Electrode.jpg" data-zoom="assets/img/AD-Plast-06-Electrode.jpg" data-cap="PL-06 · Électrode" aria-label="Électrode — agrandir">
+            <img src="assets/img/AD-Plast-06-Electrode.jpg" alt="Électrode" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Électrode</span><span class="en">Electrode</span><span class="org">AD Plast · 2023</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-06</span><span>A4</span><span>1:2</span><span class="proj">Duffel Bag</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/AD-Plast-06-Electrode.jpg" data-zoom="assets/img/AD-Plast-06-Electrode.jpg" data-cap="PL-06 · Électrode"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/AD-Plast-07-Plateau-aspiration.jpg" data-zoom="assets/img/AD-Plast-07-Plateau-aspiration.jpg" data-cap="PL-07 · Plateau d’aspiration-évacuation" aria-label="Plateau d’aspiration-évacuation — agrandir">
+            <img src="assets/img/AD-Plast-07-Plateau-aspiration.jpg" alt="Plateau d’aspiration-évacuation" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Plateau d’aspiration-évacuation</span><span class="en">Vacuum and ejection plate</span><span class="org">AD Plast · 2023</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-07</span><span>A3</span><span>2:3</span><span class="proj">Duffel Bag</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/AD-Plast-07-Plateau-aspiration.jpg" data-zoom="assets/img/AD-Plast-07-Plateau-aspiration.jpg" data-cap="PL-07 · Plateau d’aspiration-évacuation"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/AD-Plast-08-Plateau-pieds.jpg" data-zoom="assets/img/AD-Plast-08-Plateau-pieds.jpg" data-cap="PL-08 · Plateau d’assemblage des pieds" aria-label="Plateau d’assemblage des pieds — agrandir">
+            <img src="assets/img/AD-Plast-08-Plateau-pieds.jpg" alt="Plateau d’assemblage des pieds" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Plateau d’assemblage des pieds</span><span class="en">Feet assembly plate</span><span class="org">AD Plast · 2023</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-08</span><span>A4</span><span>1:2</span><span class="proj">Duffel Bag</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/AD-Plast-08-Plateau-pieds.jpg" data-zoom="assets/img/AD-Plast-08-Plateau-pieds.jpg" data-cap="PL-08 · Plateau d’assemblage des pieds"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+        <div class="register__row reveal">
+          <a class="reg__thumb" href="assets/img/plan-convoyeur.jpg" data-zoom="assets/img/plan-convoyeur.jpg" data-cap="PL-09 · Convoyeur à deux étages" aria-label="Convoyeur à deux étages — agrandir">
+            <img src="assets/img/plan-convoyeur.jpg" alt="Convoyeur à deux étages" loading="lazy" width="72" height="54"></a>
+          <div class="reg__main">
+            <div class="t"><span class="fr">Convoyeur à deux étages</span><span class="en">Two-level conveyor</span><span class="org">ENIB · Eleonetech · 2024</span></div>
+          </div>
+          <div class="reg__meta">
+            <span class="ref">PL-09</span><span>A3</span><span>1:13</span><span class="proj">Convoyeur PCB</span>
+          </div>
+          <div class="acts">
+            <a href="assets/img/plan-convoyeur.jpg" data-zoom="assets/img/plan-convoyeur.jpg" data-cap="PL-09 · Convoyeur à deux étages"><span class="fr">Voir</span><span class="en">View</span></a>
+          </div>
+        </div>
+      </div>
+      <p class="smallcaps" style="margin-top:14px"><span class="fr">Planches 01 à 08 : dispositif de soudure de fond, ligne Duffel Bag. Planche 09 : convoyeur bi-étage pour racks de PCB. Cliquer sur une vignette pour l’agrandir.</span><span class="en">Sheets 01 to 08: bottom-weld fixture, Duffel Bag line. Sheet 09: two-level conveyor for PCB racks. Click a thumbnail to enlarge.</span></p>
+    </div>
+  </section>
+
+  <!-- ============================ 06 CERTIFICATIONS ============================ -->
+  <section class="chapter" id="certifications">
+    <div class="wrap">
+      <div class="chapter__head">
+        <div class="chapter__num">06</div>
+        <div class="chapter__title">
+          <h2><span class="fr">Certifications</span><span class="en">Certifications</span></h2>
+          <p><span class="fr">Six certifications SOLIDWORKS, du niveau Associate au niveau Expert, vérifiables en ligne avec leur identifiant.</span><span class="en">Six SOLIDWORKS certifications, from Associate to Expert level, verifiable online with their ID.</span></p>
+        </div>
+        <div class="chapter__meta smallcaps"><div>Section 06 / 08</div><div>CSWE · CSWP · CSWA</div></div>
+      </div>
+
+      <div class="certtable">
+        <div class="certtable__row certtable__head">
+          <span><span class="fr">Code</span><span class="en">Code</span></span><span><span class="fr">Intitulé</span><span class="en">Title</span></span><span><span class="fr">Identifiant</span><span class="en">Credential ID</span></span><span></span>
+        </div>
+        <div class="certtable__row reveal">
+          <div class="certtable__code">CSWE<em>EXP</em></div>
+          <div class="certtable__name">Certified SOLIDWORKS Expert — Mechanical Design<span>Expert</span></div>
+          <div class="certtable__id">ID C-3WCFYBU9JH</div>
+          <a class="doclink certtable__v" href="https://3dexperience.virtualtester.com/#certvalidate" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="fr">Vérifier</span><span class="en">Verify</span></a>
+        </div>
+        <div class="certtable__row reveal">
+          <div class="certtable__code">CSWP<em>SIM</em></div>
+          <div class="certtable__name">Certified SOLIDWORKS Professional — Simulation<span>Professional</span></div>
+          <div class="certtable__id">ID C-TED5Y6SRVJ</div>
+          <a class="doclink certtable__v" href="https://3dexperience.virtualtester.com/#certvalidate" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="fr">Vérifier</span><span class="en">Verify</span></a>
+        </div>
+        <div class="certtable__row reveal">
+          <div class="certtable__code">CSWP<em>CAM</em></div>
+          <div class="certtable__name">Certified SOLIDWORKS Professional — CAM<span>Professional</span></div>
+          <div class="certtable__id">ID C-7EJBPH3LRU</div>
+          <a class="doclink certtable__v" href="https://3dexperience.virtualtester.com/#certvalidate" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="fr">Vérifier</span><span class="en">Verify</span></a>
+        </div>
+        <div class="certtable__row reveal">
+          <div class="certtable__code">CSWA<em>AD</em></div>
+          <div class="certtable__name">Certified SOLIDWORKS Associate — Additive Manufacturing<span>Associate</span></div>
+          <div class="certtable__id">ID C-SM9QHAEJ7P</div>
+          <a class="doclink certtable__v" href="https://3dexperience.virtualtester.com/#certvalidate" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="fr">Vérifier</span><span class="en">Verify</span></a>
+        </div>
+        <div class="certtable__row reveal">
+          <div class="certtable__code">CSWA<em>E</em></div>
+          <div class="certtable__name">Certified SOLIDWORKS Associate — Electrical Design<span>Associate</span></div>
+          <div class="certtable__id">ID C-8QTPHEDJWA</div>
+          <a class="doclink certtable__v" href="https://3dexperience.virtualtester.com/#certvalidate" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="fr">Vérifier</span><span class="en">Verify</span></a>
+        </div>
+        <div class="certtable__row reveal">
+          <div class="certtable__code">CSWA<em>S</em></div>
+          <div class="certtable__name">Certified SOLIDWORKS Associate — Sustainability<span>Associate</span></div>
+          <div class="certtable__id">ID C-AJ92YNMRLF</div>
+          <a class="doclink certtable__v" href="https://3dexperience.virtualtester.com/#certvalidate" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="fr">Vérifier</span><span class="en">Verify</span></a>
+        </div>
+      </div>
+      <p class="smallcaps" style="margin-top:14px"><span class="fr">La vérification s’effectue sur le portail officiel SOLIDWORKS avec l’identifiant de la colonne 3. Aucun document n’est mis en ligne dans cette édition.</span><span class="en">Verification is done on the official SOLIDWORKS portal with the ID in column 3. No document is published in this edition.</span></p>
+    </div>
+  </section>
+
+  <!-- ============================ 07 FORMATION ============================ -->
+  <section class="chapter" id="formation">
+    <div class="wrap">
+      <div class="chapter__head">
+        <div class="chapter__num">07</div>
+        <div class="chapter__title">
+          <h2><span class="fr">Formation</span><span class="en">Education</span></h2>
+          <p><span class="fr">De la licence technique au grade d’ingénieur, en passant par les Arts et Métiers.</span><span class="en">From the technical bachelor’s to the engineering degree, through Arts et Métiers.</span></p>
+        </div>
+        <div class="chapter__meta smallcaps"><div>Section 07 / 08</div><div>2020 — 2027</div></div>
+      </div>
+
+      <div class="road">
+        <div class="road__row reveal">
+          <div class="road__yr">2025 — 2027</div>
+          <div>
+            <h4><span class="fr">Cycle ingénieur généraliste — Programme Grande École</span><span class="en">General engineering degree — Grande École programme</span></h4>
+            <p><span class="fr">Qualité et maintenance, systèmes industriels, conception mécanique, gestion de projet.</span><span class="en">Quality and maintenance, industrial systems, mechanical design, project management.</span></p>
+          </div>
+          <div class="place">Arts et Métiers Paris (ENSAM)<br>Paris, France</div>
+        </div>
+        <div class="road__row reveal">
+          <div class="road__yr">2023 — 2027</div>
+          <div>
+            <h4><span class="fr">Cycle ingénieur en génie mécanique</span><span class="en">Mechanical engineering degree</span></h4>
+            <p><span class="fr">Industrialisation, dimensionnement, simulation numérique, matériaux, gestion de projets industriels.</span><span class="en">Industrialisation, sizing, numerical simulation, materials, industrial project management.</span></p>
+          </div>
+          <div class="place">École Nationale d’Ingénieurs de Bizerte<br>Bizerte, Tunisie</div>
+        </div>
+        <div class="road__row reveal">
+          <div class="road__yr">2020 — 2023</div>
+          <div>
+            <h4><span class="fr">Licence nationale en génie mécanique — CFM</span><span class="en">National bachelor’s in mechanical engineering — CFM</span></h4>
+            <p><span class="fr">Construction et fabrication mécanique : conception, procédés, FAO, métrologie. Projet de fin d’études chez AD Plast.</span><span class="en">Mechanical design and manufacturing: design, processes, CAM, metrology. Final-year project at AD Plast.</span></p>
+          </div>
+          <div class="place">ISET de Bizerte<br>Bizerte, Tunisie</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 08 CONTACT ============================ -->
+  <section class="chapter" id="contact">
+    <div class="wrap">
+      <div class="chapter__head">
+        <div class="chapter__num">08</div>
+        <div class="chapter__title">
+          <h2><span class="fr">Contact</span><span class="en">Contact</span></h2>
+          <p><span class="fr">Stage de fin d’études, six mois, dès février 2027 — France ou Europe, sous convention Arts et Métiers / ENIB.</span><span class="en">Final-year internship, six months, from February 2027 — France or Europe, under an Arts et Métiers / ENIB agreement.</span></p>
+        </div>
+        <div class="chapter__meta smallcaps"><div>Section 08 / 08</div><div>Stage 6 <span class="fr">mois</span><span class="en">months</span> · 2027</div></div>
+      </div>
+
+      <div class="contact">
+        <div class="contact__grid">
+          <div>
+            <h2><span class="fr">Un stage en conception ou <em>industrialisation</em> ?</span><span class="en">An internship in design or <em>manufacturing</em>?</span></h2>
+            <p><span class="fr">Je cherche un stage de six mois à partir de février 2027, en France ou en Europe, sous convention avec Arts et Métiers Paris et l’ENIB. Moules, outillages, lignes de production, qualité : dites-moi sur quoi vous travaillez.</span><span class="en">I am looking for a six-month internship starting February 2027, in France or Europe, under an agreement with Arts et Métiers Paris and ENIB. Moulds, fixtures, production lines, quality: tell me what you are working on.</span></p>
+            <div class="contact__cta">
+              <a class="btn btn--fill" href="mailto:ahmed.hamdi@ensam.eu?subject=Stage%20de%20fin%20d%27%C3%A9tudes%202027"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg><span class="fr">Écrire un e-mail</span><span class="en">Send an e-mail</span></a>
+              <a class="btn btn--line" href="https://www.linkedin.com/in/ahmed-hamdi-46b119211/" target="_blank" rel="noopener">LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+              <a class="btn btn--quiet" href="tel:+33695189484">+33 6 95 18 94 84</a>
+            </div>
+          </div>
+          <dl class="contact__table">
+            <div><dt>E-mail</dt><dd><a href="mailto:ahmed.hamdi@ensam.eu">ahmed.hamdi@ensam.eu</a></dd></div>
+            <div><dt><span class="fr">Téléphone</span><span class="en">Phone</span></dt><dd><a href="tel:+33695189484">+33 6 95 18 94 84</a></dd></div>
+            <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/ahmed-hamdi-46b119211/" target="_blank" rel="noopener">ahmed-hamdi-46b119211</a></dd></div>
+            <div><dt><span class="fr">Localisation</span><span class="en">Location</span></dt><dd>Paris 14e · France</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ COLOPHON ============================ -->
+  <footer class="colophon">
+    <div class="wrap">
+      <div class="colophon__grid">
+        <div>
+          <b>HAMDI Ahmed</b>
+          <p><span class="fr">Édition 05 — dossier technique. Composition : Space Grotesk, Manrope, Instrument Serif, IBM Plex Mono. Images, plans et rendus issus des travaux personnels. Édition sans document PDF. Site statique : il s’ouvre sans connexion.</span><span class="en">Edition 05 — technical file. Set in Space Grotesk, Manrope, Instrument Serif and IBM Plex Mono. Images, drawings and renders come from personal work. Edition without PDF documents. Static site: it opens without a connection.</span></p>
+        </div>
+        <nav class="colophon__links" aria-label="Liens">
+          <a href="https://www.linkedin.com/in/ahmed-hamdi-46b119211/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:ahmed.hamdi@ensam.eu">E-mail</a>
+          <a href="#top"><span class="fr">Haut de page</span><span class="en">Top</span></a>
+        </nav>
+      </div>
+      <div class="colophon__end">
+        <span>© <span data-year>2026</span> HAMDI Ahmed — Paris 14e</span>
+        <span><span class="fr">Modes jour / nuit</span><span class="en">Day / night modes</span> · v5</span>
+        <span><span class="fr">Conception & industrialisation</span><span class="en">Design & manufacturing</span></span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- ============================ VISIONNEUSE ============================ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Visionneuse">
+  <div class="lb__bar">
+    <p data-lb-cap></p>
+    <div>
+      <button type="button" data-lb-close aria-label="Fermer"><span class="fr">Fermer</span><span class="en">Close</span></button>
+    </div>
+  </div>
+  <img alt="">
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
